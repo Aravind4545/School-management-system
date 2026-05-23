@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  @apply bg-white text-navy antialiased;
+}
+
+.exam-mode {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.exam-mode * {
+  user-select: none !important;
+}
