@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ap-inter-eamcet-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    disk:
+      name: sqlite-data
+      sizeGB: 1
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: FRONTEND_URL
+        sync: false
+      - key: NODE_ENV
+        value: production
